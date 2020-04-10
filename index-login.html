@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>PiuPiuwer</title>
+		<link rel="icon" href="img/logo.svg">
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<link rel="stylesheet" type="text/css" href="style-login.css"/>	
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<header>
+			<div id="titulo">
+				<img id="logo" src="img/logo.svg">
+				<h1 id="piupiuwer" >PiuPiuwer</h1>
+			</div>
+			<a id="cadastre" href="index-cadastro.html">Cadastre-se</a>	
+		</header>
+		<main>
+			<form id="form">
+				<h2 id="subtit">Bem-Vindo de Volta!</h2>
+				<input class="input" id="usuario" name= "usuario" placeholder="Usuário">
+				<input class="input" id="senha" name= "senha" placeholder="Senha" type="password">
+				<a id="esqueceu" href="index-senha.html">Esqueceu a senha?</a>
+				<ul>
+					<li class="erro" id="errouser"></li>
+					<li class="erro" id="erropassword"></li>
+				</ul>
+				<button id="login" type="button">Login</button>
+			</form>
+		</main>
+		<footer>
+			<p>PiuPiuwer &#169; 2020</p>
+			<p>Email: contato@piupiuwer.com.br</p>
+
+		</footer>
+			
+	</body>
+
+	<script src="js/login.js"></script>	
+
+</html>
+

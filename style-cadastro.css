@@ -1,0 +1,224 @@
+body{
+    background-color: #E7F0E8;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("img/bgcadastro.png");
+    background-size: cover;
+}
+header{
+    background:#334B46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#titulo{
+    display:flex;
+    align-items: center;
+}
+#logo{
+    width: 10%;
+    margin: 5% 2%;
+}
+#piupiuwer{
+    font-size: 50px;
+    font-family: 'Averia Sans Libre', cursive;
+    color: #7EFF9B;
+}
+#jatem{
+    font-size: 16px;
+    margin-right: 2%;
+    text-decoration: none;
+    color:#D4EED9;
+    font-weight: 600;
+    transition: 0.2s;
+}
+#jatem:hover{
+    opacity: 0.5;
+}
+#form{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+#subtit{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    font-size: 40px;
+    color: #334B46;
+}
+.input{
+    background-color:#D4EED9;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    width: 30%;
+    margin: 0.8% auto;
+    font-size: 16px;
+    padding: 0 1%;
+}
+.input:focus{
+    outline: none;
+}
+.nomes{
+    width: 13.8%;
+    background-color:#D4EED9;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    margin: 0.8% auto;
+    font-size: 16px;
+    padding: 0 1%;
+}
+.nomes:focus{
+    outline: none;
+}
+.label{
+    margin-top: 1%;
+}
+.data{
+    width:5%;
+    background-color:#D4EED9;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    font-size: 16px;
+    padding: 0 1%;
+    margin: 0.8% auto;
+}
+.data:focus{
+    outline:none;
+}
+data:hover{
+    outline: none;
+}
+#genero{
+    display: block;
+}
+.erro{
+    color: red;
+    margin: 0.5% auto;
+    font-size: 12px;
+}
+#enviar{
+    color:#D4EED9;
+    background-color: #334B46;
+    border: none;
+    border-radius: 5px;
+    width: 10%;
+    align-self: center;
+    font-size: 18px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding:5px;
+    transition: 0.2s;
+}
+#enviar:hover{
+    background-color: #60746A;
+    cursor: pointer;
+}
+#enviar:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-image: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #titulo{
+        justify-content: center;
+    }
+    #logo{
+        width: 12%;
+        margin: 3% 1%;
+    }  
+    #piupiuwer{
+        font-size: 40px;
+    }
+    #jatem{
+        font-size: 14px;
+        margin: 1% auto;
+    }
+    #subtit{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 28px;
+    }
+    .nomes{
+        width: 80%;
+        margin: 2% auto;
+        font-size: 16px;
+    }
+    .input{
+        width: 80%;
+        margin: 2% auto;
+        font-size: 16px;
+    }
+    .label{
+        margin-top: 3%;
+    }
+    .data{
+        width:20%;
+        margin-top: 3%;
+    }
+    #enviar{
+        width: 30%;
+        font-size: 16px;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-height: 600px) and (orientation: landscape){
+    body{
+        background-image: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #titulo{
+        justify-content: center;
+    }
+    #logo{
+        width: 10%;
+        margin: 3% 1%;
+    }  
+    #piupiuwer{
+        font-size: 35px;
+    }
+    #jatem{
+        font-size: 14px;
+        margin-bottom: 1%;
+    }
+    #subtit{
+        margin-top: 8%;
+        margin-bottom: 3%;
+        font-size: 32px;
+    }
+    .nomes{
+        width: 70%;
+        margin: 1% auto;
+        font-size: 16px;
+    }
+    .input{
+        width: 70%;
+        margin: 1% auto;
+        font-size: 16px;
+    }
+    .label{
+        margin-top: 3%;
+    }
+    .data{
+        width:15%;
+        margin-top: 1%;
+    }
+    #enviar{
+        width: 25%;
+        font-size: 16px;
+        margin: 3% auto;
+    }
+}

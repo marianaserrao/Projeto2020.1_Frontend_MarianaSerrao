@@ -1,0 +1,190 @@
+body{
+    background-color: #E7F0E8;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('img/bgsenha.png');
+    background-size: cover;
+}
+header{
+    background:#334B46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#titulo{
+    display:flex;
+    align-items: center;
+}
+#logo{
+    width: 10%;
+    margin: 5% 2%;
+}
+#piupiuwer{
+    font-size: 50px;
+    font-family: 'Averia Sans Libre', cursive;
+    color: #7EFF9B;
+}
+#form{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+#sendcode{
+    margin: 1% auto;
+    border: none;
+    color:#334B46;
+    opacity: 0.8;
+    background-color: #E7F0E8;
+    align-self: center;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+#sendcode:hover{
+    opacity: 1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#sendcode:focus{
+    outline: none;
+}
+#subtit{
+    margin-top: 8%;
+    margin-bottom: 1%;
+    font-size: 40px;
+    color: #334B46;
+}
+.input{
+    background-color:#D4EED9;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    width: 30%;
+    margin: 1% auto;
+    font-size: 18px;
+    padding: 0 1%;
+}
+.input:focus{
+    outline: none;
+}
+.erro{
+    color: red;
+    margin: 1% auto;
+    font-size: 12px;
+}
+#enviar{
+    color:#D4EED9;
+    background-color: #334B46;
+    border: none;
+    border-radius: 5px;
+    width: 10%;
+    align-self: center;
+    font-size: 18px;
+    margin-top: 1%;
+    margin-bottom: 30px;
+    padding:5px;
+    transition: 0.2s;
+}
+#enviar:hover{
+    background-color: #60746A;
+    cursor: pointer;
+}
+#enviar:focus{
+    outline: none;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #60746A;
+    color: #E7F0E8;
+    padding: 0.2em 0;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    body{
+        background-image: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #titulo{
+        justify-content: center;
+    }
+    #logo{
+        width: 12%;
+        margin: 3% 1%;
+    }  
+    #piupiuwer{
+        font-size: 40px;
+    }
+    #subtit{
+        margin-top: 20%;
+        margin-bottom: 8%;
+        font-size: 32px;
+    }
+    #sendcode{
+        margin-bottom: 5%;
+        font-size: 14px;
+    }
+    .input{
+        width: 80%;
+        margin: 2% auto;
+        font-size: 16px;
+    }
+    #enviar{
+        width: 30%;
+        font-size: 14px;
+        margin-top: 10%;
+        padding:5px;
+    }
+    #enviar:focus{
+        outline: none;
+    }
+}
+
+@media only screen and (max-height: 600px) and (orientation: landscape){
+    body{
+        background-image: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #titulo{
+        justify-content: center;
+    }
+    #logo{
+        width: 10%;
+        margin: 3% 1%;
+    }  
+    #piupiuwer{
+        font-size: 35px;
+    }
+    #subtit{
+        margin-top: 5%;
+        margin-bottom: 3%;
+        font-size: 32px;
+    }
+    #sencode{
+        width: auto;
+    }
+    .input{
+        width: 70%;
+        margin: 1% auto;
+        font-size: 16px;
+    }
+    #enviar{
+        width: 30%;
+        align-self: center;
+        font-size: 14px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        padding:5px;
+        transition: 0.2s;
+    }   
+}
