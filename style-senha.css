@@ -141,9 +141,6 @@ footer{
         margin-top: 10%;
         padding:5px;
     }
-    #enviar:focus{
-        outline: none;
-    }
 }
 
 @media only screen and (max-height: 600px) and (orientation: landscape){

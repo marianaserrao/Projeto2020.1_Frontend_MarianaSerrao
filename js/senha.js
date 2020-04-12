@@ -4,12 +4,12 @@ var sendcode = document.querySelector("#sendcode");
 //gerando codigo aleatorio de 6 digitos
 var code=Math.floor(Math.random() * 899999) + 100000;
 
-//funcao mandar email
+//funcao mandar codigo
 sendcode.addEventListener("click",function(){
     console.log(code);
 })
 
-//validando inputs
+//funcao enviar
 enviar.addEventListener("click",function(){
 
     //chamando elementos html
@@ -18,26 +18,28 @@ enviar.addEventListener("click",function(){
     var codigoerrado = document.querySelector("#codigoerrado");
     var digitesenha = document.querySelector("#digitesenha");
 
-    //chamando values
-    var passwordvalue1 = document.getElementById('senha').value;
-    var passwordvalue2 = document.getElementById('confirmar').value;
-    console.log(passwordvalue1);
-    console.log(passwordvalue2);
+    //definindo objeto user
+    var user={
+        senha: form.senha.value,
+        confirmar: form.confirmar.value,
+        codigo: form.codigo.value,
+    }
     
     //limpando erros
     desigualdade.innerHTML='';
     codigoerrado.innerHTML='';
     digitesenha.innerHTML='';
 
-    if(passwordvalue1==0 || passwordvalue2==0){
+    //validando inputs
+    if(user.senha==0 || user.confirmar==0){
         digitesenha.textContent="Digite a senha nova em ambos os campos!"
     }
 
-    if(passwordvalue1!=passwordvalue2 && !passwordvalue1==0 && !passwordvalue2==0){
+    if(user.senha!=user.confirmar && !user.senha==0 && !user.confirmar==0){
         desigualdade.textContent="Senhas diferentes!";
     }
     
-    if(form.codigo.value!=code){
+    if(user.codigo!=code){
         codigoerrado.textContent="Código incorreto!";
     }
 })

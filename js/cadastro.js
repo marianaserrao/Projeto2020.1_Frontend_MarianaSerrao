@@ -1,6 +1,6 @@
 var enviar = document.querySelector("#enviar");
 
-//funcao do envio de formulario
+//funcao enviar
 enviar.addEventListener("click",function(){
     event.preventDefault();
 
@@ -18,19 +18,13 @@ enviar.addEventListener("click",function(){
             nome:form.nome.value,
             sobrenome:form.sobrenome.value,
             email: form.email.value,
+            usuario: form.usuario.value,
             senha:form.senha.value,
             dia: form.dia.value,
             mes: form.mes.value,
             ano: form.ano.value,
             genero:form.genero.value,
     }
-
-    //chamando values   
-    var nomevalue = document.getElementById('nome').value;
-    var sobrenomevalue = document.getElementById('sobrenome').value;
-    var emailvalue = document.getElementById('email').value;
-    var usuariovalue = document.getElementById('usuario').value;
-    var senhavalue = document.getElementById('senha').value;
 
     //limpando erros
     errodata.innerHTML='';
@@ -40,34 +34,36 @@ enviar.addEventListener("click",function(){
     errousuario.innerHTML='';
     errosenha.innerHTML='';
 
+    
     //validando inputs
+    var erro=false
+
     if(user.dia>31 || user.dia<1 || user.mes>12 || user.mes<1 || user.ano==0){
         errodata.textContent="Data inválida!";
+        erro=true;
     }
-    if (erroinsert(nomevalue)) {
+    if (user.nome==0){
         erronome.textContent="Nome Inválido!";
+        erro=true;
     }
-    if (erroinsert(sobrenomevalue)) {
+    if (user.sobrenome==0){
         errosobrenome.textContent="Sobrenome Inválido!";
+        erro=true;
     }
-    if (erroinsert(emailvalue)) {
+    if (user.email==0){
         erroemail.textContent="Email Inválido!";
+        erro=true;
     }
-    if (erroinsert(usuariovalue)) {
+    if (user.usuario==0){
         errousuario.textContent="Usuário Inválido!";
+        erro=true;
     }
-    if (erroinsert(senhavalue)) {
+    if (user.senha==0){
         errosenha.textContent="Senha Inválida!";
+        erro=true;
     }
-    else{
+    if (erro==false){
         window.location='index-login.html';
-    } 
+    }
 
 })
-
-//funcao de validacao de inputs
-function erroinsert(insert){
-    if (insert==0){
-        return true;
-    }
-}

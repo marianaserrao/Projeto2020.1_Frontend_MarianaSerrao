@@ -1,6 +1,6 @@
 var login = document.querySelector("#login");
 
-//funcao de login
+//funcao login
 login.addEventListener("click",function(){
     event.preventDefault();
 
@@ -9,26 +9,21 @@ login.addEventListener("click",function(){
     var errouser = document.querySelector("#errouser");
     var erropassword = document.querySelector("#erropassword");
 
-    //chamando values
-    var uservalue = document.getElementById('usuario').value;
-    var passwordvalue = document.getElementById('senha').value;
+    //definindo objeto user
+    var user={
+        usuario:form.usuario.value,
+        senha:form.senha.value,
+    }
 
     //limpando erros
     errouser.innerHTML='';
     erropassword.innerHTML='';
 
     //validando inputs
-    if (erroinsert(uservalue)){
+    if (user.usuario==0){
         errouser.textContent="Usuário Inválido!"
     }
-    if (erroinsert(passwordvalue)){
+    if (user.senha==0){
         erropassword.textContent="Senha Inválida!"
     }
 })
-
-//funcao de validacao de inputs
-function erroinsert(insert){
-    if (insert==0){
-        return true;
-    }
-}
