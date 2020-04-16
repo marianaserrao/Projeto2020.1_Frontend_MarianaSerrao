@@ -21,9 +21,9 @@ login.addEventListener("click",function(){
 
     //validando inputs
     if (user.usuario==0){
-        errouser.textContent="Usuário Inválido!"
+        errouser.textContent="Usuário Inválido!";
     }
     if (user.senha==0){
-        erropassword.textContent="Senha Inválida!"
+        erropassword.textContent="Senha Inválida!";
     }
 })

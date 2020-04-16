@@ -32,7 +32,7 @@ enviar.addEventListener("click",function(){
 
     //validando inputs
     if(user.senha==0 || user.confirmar==0){
-        digitesenha.textContent="Digite a senha nova em ambos os campos!"
+        digitesenha.textContent="Digite a senha nova em ambos os campos!";
     }
 
     if(user.senha!=user.confirmar && !user.senha==0 && !user.confirmar==0){
