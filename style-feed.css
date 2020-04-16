@@ -145,6 +145,11 @@ main{
 .nome{
     font-weight: 600;
     color: #334B46;
+    margin-top: 5px;
+}
+.user{
+    font-size: 12px;
+    margin-top: 5px;
 }
 .piu{
     margin: auto;
