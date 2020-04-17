@@ -188,7 +188,8 @@ campofiltro.addEventListener("input",function(){
 botaopesquisar.addEventListener("click",function(){
     event.preventDefault();
     
-    console.log("oi");
+    var encontrado = false
+
     //limpando erros
     erropesquisa.innerHTML='';
     
@@ -216,11 +217,14 @@ botaopesquisar.addEventListener("click",function(){
             divfeed=divsfeed[i];
             var expressao = new RegExp(campofiltro.value, "i");
             
-            if (!expressao.test(piu)&&!expressao.test(nome)&&!expressao.test(user)){
-                
-                erropesquisa.textContent= "Nenhum resultado encontrado";
+            if (expressao.test(piu)||expressao.test(nome)||expressao.test(user)){
 
+                encontrado=true
             }
+        }
+        if(encontrado==false){
+
+            erropesquisa.textContent= "Nenhum resultado encontrado";
         }
     }
 })    
