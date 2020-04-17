@@ -188,13 +188,14 @@ campofiltro.addEventListener("input",function(){
 botaopesquisar.addEventListener("click",function(){
     event.preventDefault();
     
+    console.log("oi");
     //limpando erros
     erropesquisa.innerHTML='';
     
     //validando inputs
     var invalida = false
     var input=formpesquisa.pesquisar.value;
-    var piu=i.novopiu.value;
+    var piu=formpublicacao.novopiu.value;
     
     if (input==0){
         erropesquisa.textContent= "Pesquisa Inválida!";
@@ -260,7 +261,7 @@ botaopiar.addEventListener("click",function(){
     
     //validando inputs
     var invalido=false;
-    var piu=i.novopiu.value;
+    var piu=formpublicacao.novopiu.value;
     
     if (piu==0){
         erropublicacao.textContent="Piu Inválido!";
@@ -308,7 +309,7 @@ botaopiar.addEventListener("click",function(){
         curtir.classList.add("curtir");
         del.classList.add("del");
 
-        i.reset();
+        formpublicacao.reset();
     }
     
     //funcao curtir
