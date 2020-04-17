@@ -31,9 +31,11 @@
 		</header>
 		<main>
 			<form id="publicar">
-				<textarea id="novopiu" rows="2" onkeyup="caracteres('novopiu','contagem');" onkeydown="caracteres('novopiu','contagem');" onmouseout="caracteres('novopiu','contagem');"></textarea><br>
-				<span class="contador" id="contagem">0</span><span class="contador" id="maximo">/140</span>
-				<button id="botaopiar"><img id="piar" width="40px" src="img/piar.png"></button>
+				<div id='barrapiu'>
+					<textarea id="novopiu" rows="2" onkeyup="caracteres('novopiu','contagem');" onkeydown="caracteres('novopiu','contagem');" onmouseout="caracteres('novopiu','contagem');"></textarea><br>
+					<span class="contador" id="contagem">0</span><span class="contador" id="maximo">/140</span>
+				</div>
+				<button id="botaopiar"><img id="piar" width="44px" src="img/piar.png"></button>
             </form>
 			<p class="erro" id="erropubli"></p>
 			<nav id="feed">

@@ -16,6 +16,7 @@ header{
 #logo{
     width: 52px;
     margin: 26px 10px;
+    display: ;
 }
 #piupiuwer{
     font-size: 50px;
@@ -71,8 +72,67 @@ header{
     margin-right: 20px;
     margin-left: 50px;
     align-self: center;
+    transition: 0.2s;
+}
+#botaomenu:hover{
+    cursor: pointer;
+    opacity: 0.5;
 }
 #botaomenu:focus{
+    outline: none;
+}
+header{
+    position: relative;
+}
+.divopcoes{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom:-100%;
+    right: 0;
+    width: 110px;
+}
+.botaoperfil{
+    background-color: #334B46;
+    border: none;
+    color: #E7F0E8;
+    font-size: 14px;
+    padding: 10px 5px;
+}
+.botaoperfil:hover{
+    cursor: pointer;
+    color:rgba(231,240,232,0.5);
+}
+.botaoperfil:focus{
+    outline: none;
+}
+.botaoajuda{
+    background-color: #334B46;
+    border: none;
+    color: #E7F0E8;
+    font-size: 14px;
+    padding: 10px 5px;
+}
+.botaoajuda:hover{
+    cursor: pointer;
+    color:rgba(231,240,232,0.5);
+}
+.botaoajuda:focus{
+    outline: none;
+}
+.botaosair{
+    background-color: #334B46;
+    border: none;
+    color: #E7F0E8;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-radius: 0 0 15px 15px;
+}
+.botaosair:hover{
+    cursor: pointer;
+    color:rgba(231,240,232,0.5);
+}
+.botaosair:focus{
     outline: none;
 }
 main{
@@ -80,9 +140,14 @@ main{
 }
 #publicar{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 3%;
+    margin: 3%;
+}
+#barrapiu{
+    display: flex;
+    width: 56%;
+    margin-left: 20%;
+    justify-self: center;
 }
 #novopiu{
     background: #E7F0E8;
@@ -90,7 +155,7 @@ main{
     border-radius: 5px 0 0 5px;
     font-size: 18px;
     padding: 4px;
-    width: 50%;
+    width: 100%;
 }
 #novopiu:focus{
     outline: none;
@@ -112,15 +177,15 @@ main{
     padding: 0;
     margin-left: 1%;
 }
+#botaopiar:hover{
+    cursor: pointer;
+}
 #botaopiar:focus{
     outline: none;
 }
 .erro{
     color: red;
     font-size: 14px;
-}
-#erropubli{
-    margin-top: 10px;
 }
 .divfeed{
     background-color: #E7F0E8;
@@ -135,8 +200,8 @@ main{
     margin-bottom: 25px;
 }
 .imagem{
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     margin-right: 10px;
     border-radius: 5px;
     background-image: url('img/usuario.png');
