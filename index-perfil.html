@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>PiuPiuwer</title>
+		<link rel="icon" href="img/logo.svg">
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<link rel="stylesheet" type="text/css" href="style-perfil.css"/>	
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<header>
+			<div id="titulo">
+				<img id="logo" src="img/logo.svg">
+				<h1 id="piupiuwer" >PiuPiuwer</h1>
+            </div>
+            <div id="divmenu">
+                <button id="botaomenu"><img width="15px" id="iconemenu" src="img/menu.png"> Menu</button>
+            </div>
+		</header>
+		<main>
+			<div id="divusuario">
+				<div id="divimgperfil">
+					<div id="imgperfil"></div>
+					<label id="labelimgperfil" for="inputimgperfil"><img src="img/adicionar.png" width="11px">Alterar Foto de Perfil</label>
+					<input id="inputimgperfil" name="inputimgperfil" type="file" accept="image/png, image/jpeg">
+				</div>
+				<span id="usuario">MariS</span>
+			</div>
+			<div id="divdescricao">
+				<label class="label" id="labeldescricao" for="inputdescricao">Descricao</label>
+				<textarea id="inputdescricao" rows="8"></textarea>
+				<button id="botaodescricao">Alterar</button>
+			</div>
+			<div id="divnomes">
+				<div id="divnome">
+					<label class="label" id="labelnome">Nome</label>
+					<span class="info" id="nome">Mariana</span>
+				</div>
+				<div id="divsobrenome">
+					<label class="label" id="labelsobrenome">Sobrenome</label>
+					<span class="info" id="sobrenome">Serrão Guilherme</span>
+				</div>
+			</div>
+			<div id="divemail">
+				<label class="label" id="labelemail">Email</label>
+				<span class="info" id="email">mariana.serrao@polijunior.com.br</span>
+			</div>
+			<div id="divnascimento">
+				<label class="label" id="labelnascimento">Data de Nascimento</label>
+				<div id="divdata">
+					<span class="info" id="dia">31</span>
+					<span class="info" id="mes">05</span>
+					<span class="info" id="ano">1999</span>
+				</div>
+			</div>
+			<div id="divgenero">
+				<label class="label" id="labelgenero">Gênero</label>
+				<span class="info" id="genero">Feminino</span>
+			</div>
+			<div id="divfotos">
+				<h2 id="h2fotos">Fotos</h2>
+				<label id="labelfotos" for="inputfotos"><img src="img/adicionar.png" width="11px"> Adicionar Foto</label>
+				<input id="inputfotos" type="file" accept="image/png, image/jpeg">
+				<span id="semfotos">MariS ainda não tem fotos!</span> 
+				<div id="divnovasfotos"></div>
+			</div>
+		</main>
+		<footer>
+			<p>PiuPiuwer &#169; 2020</p>
+			<p>Email: contato@piupiuwer.com.br</p>
+
+		</footer>
+	</body>
+
+	<script src="js/perfil.js"></script>	
+
+</html>

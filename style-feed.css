@@ -2,11 +2,13 @@ body{
     background-color: #D4EED9;
     font-family: 'Montserrat', sans-serif;
     background-image: url("img/bgfeed.png");
+    background-size: 100%;
 }
 header{
     background:#334B46;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 #titulo{
     display:flex;
@@ -30,6 +32,8 @@ header{
     display: flex;
     flex-direction: column;
     width:400px;
+    padding-right: 30%;
+    padding-left: 5%;
 }
 #formpesquisa{
     display: flex;
@@ -64,13 +68,21 @@ header{
 #erropesq{
     margin: 10px auto;
 }
+#divmenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 38px;
+    width: 160px;
+}
 #botaomenu{
     font-size: 16px;
-    background: #334B46;
+    background: none;
     color: #E7F0E8;
     border: none;
-    margin-right: 20px;
-    margin-left: 50px;
+    padding-right: 20px;
+    padding-left: 50px;
     align-self: center;
     transition: 0.2s;
 }
@@ -81,16 +93,12 @@ header{
 #botaomenu:focus{
     outline: none;
 }
-header{
-    position: relative;
-}
 .divopcoes{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom:-100%;
-    right: 0;
-    width: 110px;
+    padding-top: 5%;
+    width:110px;
+    padding-left: 50px;
 }
 .botaoperfil{
     background-color: #334B46;
@@ -98,6 +106,7 @@ header{
     color: #E7F0E8;
     font-size: 14px;
     padding: 10px 5px;
+    margin: 0;
 }
 .botaoperfil:hover{
     cursor: pointer;
@@ -106,18 +115,19 @@ header{
 .botaoperfil:focus{
     outline: none;
 }
-.botaoajuda{
+.botaosenha{
     background-color: #334B46;
     border: none;
     color: #E7F0E8;
     font-size: 14px;
     padding: 10px 5px;
+    margin: 0;
 }
-.botaoajuda:hover{
+.botaosenha:hover{
     cursor: pointer;
     color:rgba(231,240,232,0.5);
 }
-.botaoajuda:focus{
+.botaosenha:focus{
     outline: none;
 }
 .botaosair{
@@ -127,6 +137,7 @@ header{
     font-size: 14px;
     padding: 10px 5px;
     border-radius: 0 0 15px 15px;
+    margin: 0;
 }
 .botaosair:hover{
     cursor: pointer;
@@ -272,6 +283,9 @@ footer{
     position: fixed;
     bottom: 0;
 }
+.cinza{
+    color: #999999;
+}
 
 
 @media only screen and (max-width: 850px) {
@@ -285,6 +299,7 @@ footer{
     }
     #titulo{
         justify-content: center;
+        margin-right: 30%;
     }
     #logo{
         width: 12%;
@@ -296,18 +311,35 @@ footer{
     #navheader{
         justify-content: center;
     }
+    #divpesquisa{
+        padding: 0 10px;
+    }
     #formpesquisa{
         margin-top: 4%;
         margin-left: 2%;
     }
+    #divmenu{
+        top: 20%;
+        margin-top: 0;
+        margin-left: 65%;
+        left: 0;
+    }
     #botaomenu{
         display: flex;
         align-items: center;
-        margin-left: 5%;
-        margin-right: 0;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+        margin-right: 30%;
+        padding-left: 0;
     }
     #iconemenu{
         margin-right: 5%;
+    }
+    .divopcoes{
+        top:0;
+        margin-top: 2%;
+        padding-left: 0px;
     }
 }
 
@@ -337,13 +369,27 @@ footer{
         margin-top: 4%;
         margin-left: 2%;
     }
+    #divmenu{
+        top: 20%;
+        margin-top: 0;
+        margin-left: 65%;
+        left: 0;
+    }
     #botaomenu{
         display: flex;
         align-items: center;
-        margin-left: 5%;
-        margin-right: 0;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+        margin-right: 30%;
+        padding-left: 0;
     }
     #iconemenu{
         margin-right: 5%;
+    }
+    .divopcoes{
+        top:0;
+        margin-top: 2%;
+        padding-left: 0px;
     }
 }

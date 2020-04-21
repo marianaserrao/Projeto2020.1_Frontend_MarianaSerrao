@@ -2,7 +2,7 @@ body{
     background-color: #E7F0E8;
     font-family: 'Montserrat', sans-serif;
     background-image: url("img/bgcadastro.png");
-    background-size: cover;
+    background-size: 100%;
 }
 header{
     background:#334B46;
