@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>PiuPiuwer</title>
+		<link rel="icon" href="../img/logo.svg">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style-feed.css"/>	
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<header>
+			<div id="titulo">
+				<img id="logo" src="../img/logo.svg">
+				<h1 id="piupiuwer" >PiuPiuwer</h1>
+			</div>
+			<nav id="navheader">
+				<div id=divpesquisa>
+					<form id="formpesquisa">
+						<input id=pesquisar name="pesquisar" placeholder="Pesquisar" type="text">
+						<button id="botaopesquisa"><img src='../img/pesquisa.png'></button>
+					</form>
+					<p class="erro" id="erropesq"></p>
+				</div>
+				<div id="divmenu">
+					<button id="botaomenu"><img width="15px" id="iconemenu" src="../img/menu.png"> Menu</button>
+				</div>	
+			</nav>
+		</header>
+		<main>
+			<form id="publicar">
+				<div id='barrapiu'>
+					<textarea id="novopiu" rows="2" onkeyup="caracteres('novopiu','contagem');" onkeydown="caracteres('novopiu','contagem');" onmouseout="caracteres('novopiu','contagem');"></textarea><br>
+					<span class="contador" id="contagem">0</span><span class="contador" id="maximo">/140</span>
+				</div>
+				<button id="botaopiar"><img id="piar" width="44px" src="../img/piar.png"></button>
+            </form>
+			<p class="erro" id="erropubli"></p>
+			<nav id="feed">
+            </nav>
+		</main>
+		<footer>
+			<p>PiuPiuwer &#169; 2020</p>
+			<p>Email: contato@piupiuwer.com.br</p>
+
+		</footer>
+	</body>
+
+	<script src="../js/feed.js"></script>	
+
+</html>

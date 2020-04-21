@@ -131,10 +131,10 @@ window.onload= function(){
 var menu=false;
 var menuclick=0;
 
-//funcao abrir menu
+//funcao menu
 botaomenu.addEventListener('click',function(){
-    event.preventDefault;
-    
+event.preventDefault;
+
     //chamando elementos html
     var divmenu = document.querySelector("#divmenu");
 
@@ -178,7 +178,7 @@ botaomenu.addEventListener('click',function(){
         sair.addEventListener("click",function(){
             window.location='index-login.html';
         })
-       
+    
         //atualizando variavel de controle
         menu=true;
     }
@@ -187,7 +187,7 @@ botaomenu.addEventListener('click',function(){
     if (menuclick%2!=0){
         var opcoes=document.querySelector(".divopcoes");
         opcoes.remove();
-        
+            
         //atualizando variavel
         menu=false;
     }

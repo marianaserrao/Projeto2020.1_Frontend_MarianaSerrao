@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>PiuPiuwer</title>
+		<link rel="icon" href="../img/logo.svg">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style-cadastro.css"/>	
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<header>
+			<div id="titulo">
+				<img id="logo" src="../img/logo.svg">
+				<h1 id="piupiuwer" >PiuPiuwer</h1>
+			</div>
+			<a id="jatem" href="index-login.html">Já tem cadastro?</a>	
+		</header>
+		<form id="form">
+			<h2 id="subtit">Venha ser um PiuPiuwer!</h2>
+			<div>
+				<input class="nomes" id="nome" nome="nome" placeholder="Nome" type="text">
+				<input class="nomes" id="sobrenome" nome="sobrenome" placeholder="Sobrenome" type="text">
+			</div>
+			<input class="input" id="email" nome="email" placeholder="Email" type="email">
+			<input class="input" id="usuario" nome="usuario" placeholder="Usuário"type="text">
+			<input class="input" id="senha" nome="senha" placeholder="Senha" type="password">
+			<label class="label">Data de Nascimento
+				<div id="nascimento">
+					<input class="data" id="dia" nome="dia" type="number" placeholder="dd">
+					<input class="data" id="mes" nome="mes" type="number" placeholder="mm">
+					<input class="data" id="ano" nome="ano" type="number" placeholder="aaaa">
+				</div>
+			</label>
+			<label class="label">
+				Gênero
+				<select class="input" id="genero">
+					<option>Feminino</option>
+					<option>Masculino</option>
+					<option>Outro</option>
+				</select>
+			</label>
+			<ul id="errolista">
+				<li class="erro" id="erronome"></li>
+				<li class="erro" id="errosobrenome"></li>
+				<li class="erro" id="erroemail"></li>
+				<li class="erro" id="errousuario"></li>
+				<li class="erro" id="errosenha"></li>
+				<li class="erro" id="errodata"></li>
+			</ul>
+			<button id="enviar" type="button">Enviar</button>
+		</form>
+		<footer>
+			<p>PiuPiuwer &#169; 2020</p>
+			<p>Email: contato@piupiuwer.com.br</p>
+
+		</footer>
+	</body>
+
+	<script src="../js/cadastro.js"></script>	
+
+</html>
+
+

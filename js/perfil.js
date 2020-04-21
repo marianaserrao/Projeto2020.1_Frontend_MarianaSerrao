@@ -83,10 +83,10 @@ main.addEventListener("click",function(){
         var opcoes=document.querySelector(".divopcoes");
         opcoes.remove();
         
-        //atualizando variavel
+        //atualizando variaveis
         menu=false;
     }
-
+    
     //atualizando variavel
     menuclick+=1;    
 })
